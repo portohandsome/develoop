@@ -7,9 +7,3 @@ def add_task(task):
 
     task.append(task)
     print("correct เพิ่มรายการสำเร็จ")
-
-
-
-def python_function(select_menu_number):
-    print("Run Function python_function")
-    print(select_menu_number)
