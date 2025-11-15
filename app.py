@@ -1,4 +1,4 @@
-from  add import python_function
+
 def getSelectMenuNumber():
     print("--------------To do list app---------------")
     print("menu")
@@ -16,23 +16,23 @@ def getSelectMenuNumber():
 
     return select_menu_number
 
-print("--------------------")
-python_function(select_menu_number)
 
+while True:
+    select_menu_number = getSelectMenuNumber()
 
-tasks = []
+    tasks = []
 
-if select_menu_number == 1 :
-    print("คุนเลือกเมนูที่1")
-elif select_menu_number == 2 :
-    print("คุนเลือกเมนูที่2")
-elif select_menu_number == 3 :
-    print("คุนเลือกเมนูที่3")
-elif select_menu_number == 4 :
-    print("คุนเลือกเมนูที่4")
-elif select_menu_number == 5 :
-    print("คุนเลือกเมนูที่5")
-elif select_menu_number == 6 :
-    print("คุนเลือกเมนูที่6")
-else:
-    print("ควยไรมั่วละ")
+    if select_menu_number == 1 :
+        print("คุนเลือกเมนูที่1")
+    elif select_menu_number == 2 :
+        print("คุนเลือกเมนูที่2")
+    elif select_menu_number == 3 :
+        print("คุนเลือกเมนูที่3")
+    elif select_menu_number == 4 :
+        print("คุนเลือกเมนูที่4")
+    elif select_menu_number == 5 :
+        print("คุนเลือกเมนูที่5")
+    elif select_menu_number == 6 :
+        print("คุนเลือกเมนูที่6")
+    else:
+        print("ควยไรมั่วละ")
