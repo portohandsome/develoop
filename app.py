@@ -1,4 +1,4 @@
-
+from  add import python_function
 
 print("--------------To do list app---------------")
 print("menu")
@@ -14,6 +14,8 @@ select_menu_number = int(select_menu)
 
 print("menu i choose: ", select_menu_number)
 
+print("--------------------")
+python_function(select_menu_number)
 
 
 # tasks = []

@@ -13,10 +13,3 @@ def add_task(task):
 def python_function(select_menu_number):
     print("Run Function python_function")
     print(select_menu_number)
-    
-
-
-
-    from  add import python_function
-print("--------------------")
-python_function(select_menu_number)
