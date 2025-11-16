@@ -1,9 +1,9 @@
-def add_task(tasks):
-    title = input("Enter new item name: ")
+def add_tasks(tasks):
+    title = input("ใส่ชื่อรายการใหม่: ")
     task = {
         "title": title,
         "completed": False
-    }
-I
-tasks.append(task)
-print("Added successful item")
+     }
+   
+    tasks.append(task)
+    print("เพิ่มรายการสำเร็จ")
