@@ -2,7 +2,7 @@ def add_task(tasks):
     title = input("ใส่ชื่อรายการใหม่: ")
     task = {
         "title": title,
-        "completed": True
+        "completed": False
      }
    
     tasks.append(task)
