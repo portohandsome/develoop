@@ -1,4 +1,5 @@
-from  add import python_function
+from view import view_task
+
 def getSelectMenuNumber():
     print("--------------To do list app---------------")
     print("menu")
@@ -16,23 +17,33 @@ def getSelectMenuNumber():
 
     return select_menu_number
 
-print("--------------------")
-python_function(select_menu_number)
 
+while True:
+    select_menu_number = getSelectMenuNumber()
 
-tasks = []
+    tasks = [
+        {
+            "title": "Default Title",
+            "complete" :False
+        },
+        {
+            "title": "Default Title 2",
+            "complete" :True
+        }
+    
+   ]
 
-if select_menu_number == 1 :
-    print("คุนเลือกเมนูที่1")
-elif select_menu_number == 2 :
-    print("คุนเลือกเมนูที่2")
-elif select_menu_number == 3 :
-    print("คุนเลือกเมนูที่3")
-elif select_menu_number == 4 :
-    print("คุนเลือกเมนูที่4")
-elif select_menu_number == 5 :
-    print("คุนเลือกเมนูที่5")
-elif select_menu_number == 6 :
-    print("คุนเลือกเมนูที่6")
-else:
-    print("ควยไรมั่วละ")
+    if select_menu_number == 1:
+        print("คุนเลือกเมนูที่1")
+    elif select_menu_number == 2:
+        view_task(tasks)
+    elif select_menu_number == 3:
+        print("คุนเลือกเมนูที่3")
+    elif select_menu_number == 4:
+        print("คุนเลือกเมนูที่4")
+    elif select_menu_number == 5:
+        print("คุนเลือกเมนูที่5")
+    elif select_menu_number == 6:
+        print("คุนเลือกเมนูที่6")
+    else:
+        print("ควยไรมั่วละ")
