@@ -1,3 +1,4 @@
+from add import add_task
 from view import view_task
 
 def getSelectMenuNumber():
@@ -18,23 +19,16 @@ def getSelectMenuNumber():
     return select_menu_number
 
 
+
+tasks =[]
+    
 while True:
     select_menu_number = getSelectMenuNumber()
+    print("----------------------------------")
 
-    tasks = [
-        {
-            "title": "Default Title",
-            "complete" :False
-        },
-        {
-            "title": "Default Title 2",
-            "complete" :True
-        }
-    
-   ]
 
     if select_menu_number == 1:
-        print("คุนเลือกเมนูที่1")
+        add_task(tasks)
     elif select_menu_number == 2:
         view_task(tasks)
     elif select_menu_number == 3:
