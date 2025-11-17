@@ -1,5 +1,5 @@
 def add_task(tasks):
-    title = input("ใส่ชื่อรายการใหม่: ")
+    title = input("ชื่อรายการ: ")
     task = {
         "title": title,
         "completed": False
