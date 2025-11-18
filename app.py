@@ -1,5 +1,6 @@
 from add import add_task
 from view import view_task
+from delete import delete_task
 
 def getSelectMenuNumber():
     print("--------------To do list app---------------")
@@ -32,7 +33,7 @@ while True:
     elif select_menu_number == 2:
         view_task(tasks)
     elif select_menu_number == 3:
-        print("คุนเลือกเมนูที่3")
+        delete_task(tasks)
     elif select_menu_number == 4:
         print("คุนเลือกเมนูที่4")
     elif select_menu_number == 5:
