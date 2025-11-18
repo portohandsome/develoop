@@ -1,4 +1,6 @@
 def view_task(tasks):
+    count = 0
+
     for task in tasks:
-        print(task)
-        print("รายการ : ", task["title"])
+        
+        print(f"{count + 1}.","รายการ : ", task["title"])

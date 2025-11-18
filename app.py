@@ -14,7 +14,7 @@ def getSelectMenuNumber():
     select_menu = input("เลือกเมนู (ตัวเลข) : ")
     select_menu_number = int(select_menu)
 
-    print("menu i choose: ", select_menu_number)
+  
 
     return select_menu_number
 
