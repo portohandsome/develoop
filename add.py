@@ -1,22 +1,9 @@
-def add_task(task):
-    title = input("ใส่ชื่อรายการใหม่")
+def add_task(tasks):
+    title = input("ชื่อรายการ: ")
     task = {
-         "title": title,
-         "completed": True 
-    }
-
-    task.append(task)
-    print("correct เพิ่มรายการสำเร็จ")
-
-
-
-def python_function(select_menu_number):
-    print("Run Function python_function")
-    print(select_menu_number)
-    
-
-
-
-    from  add import python_function
-print("--------------------")
-python_function(select_menu_number)
+        "title": title,
+        "completed": False
+     }
+   
+    tasks.append(task)
+    print("เพิ่มรายการสำเร็จ")
